@@ -15,7 +15,8 @@ export default {
           extraLight: "#81CDA6",
           light: "#C6E9D5",
           DEFAULT: '#339A7D',
-          cardsColor: "#F1FBFA"
+          cardsColor: "#F1FBFA",
+          highlighted: "#05DE69"
         },
         bg: {
           light: "#FFFFFF",

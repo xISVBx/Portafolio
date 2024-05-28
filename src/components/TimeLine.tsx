@@ -29,9 +29,9 @@ interface TimelineProps {
 
 const Timeline: React.FC<TimelineProps> = ({ items }) => {
     return (
-        <div className="border-l-4 border-gray-200 py-6 space-y-6">
-            {items.map((item) => <TimelineItem title={item.title} date={item.date} content={item.content} />)}
-        </div>
+            <div className="border-l-4 border-gray-200 py-6 space-y-6">
+                {items.map((item) => <TimelineItem title={item.title} date={item.date} content={item.content} />)}
+            </div>
     );
 };
 
