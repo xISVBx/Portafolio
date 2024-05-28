@@ -1,39 +1,8 @@
 import AcercaDeMi from "./components/AcercaDeMi"
 import Carrousel from "./components/Carrousel"
 import Portada from "./components/Portada"
-import SkillsCards from "./components/SkillsCards"
-import flutterIcon from "./assets/flutterIcon.svg"
+import { ListSkills } from "./constants/ListSkills"
 
-const skillsContent = [
-  <SkillsCards
-      key="flutter"
-      name="Flutter"
-      level="Intermedio"
-      description="Este es un framework que sirve para papapa y hace papap y he usado para papam y yo que más."
-      icon={flutterIcon}
-  />,
-  <SkillsCards
-      key="react"
-      name="React"
-      level="Avanzado"
-      description="Una biblioteca de JavaScript para construir interfaces de usuario."
-      icon={flutterIcon}
-  />,
-  <SkillsCards
-      key="nodejs"
-      name="Node.js"
-      level="Intermedio"
-      description="Entorno de ejecución para JavaScript construido con el motor V8 de Chrome."
-      icon={flutterIcon}
-  />,
-  <SkillsCards
-      key="Kotlin"
-      name="Node.js"
-      level="Intermedio"
-      description="Entorno de ejecución para JavaScript construido con el motor V8 de Chrome."
-      icon={flutterIcon}
-  />
-];
 function App() {
 
 
@@ -47,7 +16,7 @@ function App() {
           <div className="bg-primary rounded-2xl bg-clip-border backdrop-filter backdrop-blur-xl bg-opacity-100 relative z-20">
             <Portada />
             {/* El cuerpo del contenido*/}
-            <div className='py-10 px-10 bg-bg-light'>
+            <div className='pt-10 mb-5 px-10 bg-bg-light rounded-b-2xl'>
               <AcercaDeMi />
               {/* Habilidades y Servicios*/}
               <div className='w-full flex justify-center  flex-col'>
@@ -56,11 +25,7 @@ function App() {
                 {/* Aca van carrousel en tarjetas*/}
                 <div className="flex mt-5">
                   {/* Aca debe de ir  mis tarjetas de contenido*/}
-                  <Carrousel items={skillsContent} />
-                  <div className="">
-                    
-                  </div>
-
+                  <Carrousel items={ListSkills} />
                 </div>
               </div>
             </div>
